@@ -1,0 +1,8 @@
+ public static int sumOfNodes(Node root){
+        if(root==null){
+            return 0;
+        }
+        int leftsum=sumOfNodes(root.left);
+        int rightsum=sumOfNodes(root.right);
+        return leftsum+rightsum+root.data;
+    }
